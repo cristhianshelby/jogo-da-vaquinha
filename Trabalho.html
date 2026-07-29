@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google - Clone</title>
+    <style>
+        /* Reset básico e fontes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Barra de navegação superior */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+            gap: 15px;
+            align-items: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.87);
+            font-size: 13px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-apps {
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .btn-login {
+            background-color: #181717ee;
+            color: rgb(255, 0, 0) !important;
+            padding: 9px 23px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none !important;
+        }
+
+        /* Área central de pesquisa */
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -50px; /* Ajuste para subir o logo */
+        }
+
+        .logo {
+            width: 272px;
+            margin-bottom: 30px;
+        }
+
+        .search-container {
+            width: 100%;
+            max-width: 584px;
+            position: relative;
+        }
+
+        .search-bar {
+            width: 100%;
+            height: 46px;
+            border: 1px solid #000000;
+            border-radius: 24px;
+            padding: 0 45px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-bar:hover, .search-bar:focus {
+            box-shadow: 0 1px 6px rgb(226, 50, 50);
+            border-color: rgb(255, 0, 0);
+        }
+
+        /* Botões abaixo da pesquisa */
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn-google {
+            background-color: #000000;
+            border: 1px solid #f33333;
+            border-radius: 4px;
+            color: #ff0000;
+            font-size: 14px;
+            padding: 0 16px;
+            height: 36px;
+            cursor: pointer;
+        }
+
+        .btn-google:hover {
+            box-shadow: 0 1px 1px rgb(0, 0, 0);
+            border: 1px solid #f00d0d;
+            color: #202124;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1d1818;
+            color: #ff0000;
+            font-size: 14px;
+        }
+
+        .footer-top {
+            padding: 15px 30px;
+            border-bottom: 1px solid #ff0000;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-bottom div {
+            display: flex;
+            gap: 25px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #f01313;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#">Gmail</a>
+        <a href="#">Imagens</a>
+        <div class="btn-apps">⠿</div>
+        <a href="#" class="btn-login">Fazer login</a>
+    </header>
+
+    <main>
+        <img class="logo" src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        
+        <div class="search-container">
+            <input type="text" class="search-bar">
+        </div>
+
+        <div class="buttons">
+            <button class="btn-google">Pesquisa Google</button>
+            <button class="btn-google">Estou com sorte</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">Brasil</div>
+        <div class="footer-bottom">
+            <div>
+                <a href="#">Sobre</a>
+                <a href="#">Publicidade</a>
+                <a href="#">Negócios</a>
+                <a href="#">Como funciona a Pesquisa</a>
+            </div>
+            <div>
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Configurações</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

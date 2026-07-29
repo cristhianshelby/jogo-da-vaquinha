@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <title>Vaca e Terneiro - Jogo Realista da Cobrinha</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="game-wrapper">
+       <div class="game-container">
+           <div class="game-header">
+               <div class="info-card">
+                   <div class="info-icon">🐄</div>
+                   <div class="info-content">
+                       <span class="info-label">FASE</span>
+                       <span class="info-value" id="faseNum">1</span>
+                   </div>
+               </div>
+               <div class="info-card">
+                   <div class="info-icon">🐮</div>
+                   <div class="info-content">
+                       <span class="info-label">TERNEIROS</span>
+                       <span class="info-value" id="scoreNum">0</span>
+                   </div>
+               </div>
+               <div class="info-card">
+                   <div class="info-icon">⭐</div>
+                   <div class="info-content">
+                       <span class="info-label">NÍVEL</span>
+                       <span class="info-value" id="nivelTexto">Fácil</span>
+                   </div>
+               </div>
+           </div>
+
+
+           <canvas id="gameCanvas" width="600" height="600"></canvas>
+
+
+           <div class="game-controls">
+               <button class="ctrl-btn" id="reiniciarBtn">
+                   <span>🔄</span> RECOMEÇAR
+               </button>
+               <button class="ctrl-btn" id="pausarBtn">
+                   <span>⏸️</span> PAUSAR
+               </button>
+           </div>
+
+
+           <div class="game-message" id="gameMessage">
+               🐄 Ajude a vaca a encontrar seu terneiro perdido!
+           </div>
+
+
+           <div class="mobile-controls" id="mobileControls">
+               <button class="mobile-btn" data-dir="UP">▲</button>
+               <div class="mobile-row">
+                   <button class="mobile-btn" data-dir="LEFT">◀</button>
+                   <button class="mobile-btn" data-dir="DOWN">▼</button>
+                   <button class="mobile-btn" data-dir="RIGHT">▶</button>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
